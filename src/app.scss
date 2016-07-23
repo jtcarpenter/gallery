@@ -1,0 +1,260 @@
+/* vars */
+$carouselItemWidth: 100px;
+$carouselItemMargin: 5px;
+$carouselSelectedItemWidth: 400px;
+$mobileWidth: 800px;
+$fontFamily: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+$textColor: #333;
+$arrowColor: #444;
+
+/* mixins */
+@mixin carouselWidth($itemWidth, $length, $selectedItemWidth) {
+    width: ($itemWidth * $length) +
+        $selectedItemWidth +
+        (($carouselItemMargin * 2) * $length);
+}
+
+/* elements */
+body {padding: 0; margin: 0; overflow: hidden;font-family: $fontFamily;}
+body::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image:url('./img/Seamless_White_Brick_Texture.jpg');
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    z-index: -1;}
+*:focus {outline: none;}
+
+/* carousel-ctnr */
+.carousel-ctnr {
+    text-align: center;
+    min-height:100vh;
+    height: 100%;
+    width: auto;
+    overflow: hidden;}
+.carousel-ctnr {padding:0;}
+@media (min-width: $mobileWidth) {
+    .carousel-ctnr {
+        margin-left: -0.5 * $carouselItemWidth;
+    }
+}
+@media (max-width: $mobileWidth) {
+    .carousel-ctnr {
+        margin-left: 0;
+    }
+}
+
+/* carousel */
+.carousel {
+    overflow: hidden;
+    background-color: transparent;
+    padding-top: 0;}
+.carousel--length-1 {
+    @include carouselWidth($carouselItemWidth, 1, $mobileWidth);}
+.carousel--length-2 {
+    @include carouselWidth($carouselItemWidth, 2, $mobileWidth);}
+.carousel--length-3 {
+    @include carouselWidth($carouselItemWidth, 3, $mobileWidth);}
+.carousel--length-4 {
+    @include carouselWidth($carouselItemWidth, 4, $mobileWidth);}
+.carousel--length-5 {
+    @include carouselWidth($carouselItemWidth, 5, $mobileWidth);}
+.carousel--length-6 {
+    @include carouselWidth($carouselItemWidth, 6, $mobileWidth);}
+.carousel--length-7 {
+    @include carouselWidth($carouselItemWidth, 7, $mobileWidth);}
+.carousel--length-8 {
+    @include carouselWidth($carouselItemWidth, 8, $mobileWidth);}
+.carousel--length-9 {
+    @include carouselWidth($carouselItemWidth, 9, $mobileWidth);}
+.carousel--length-10 {
+    @include carouselWidth($carouselItemWidth, 10, $mobileWidth);}
+.carousel--length-11 {
+    @include carouselWidth($carouselItemWidth, 11, $mobileWidth);}
+.carousel--length-12 {
+    @include carouselWidth($carouselItemWidth, 12, $mobileWidth);}
+.carousel--length-13 {
+    @include carouselWidth($carouselItemWidth, 13, $mobileWidth);}
+
+/* carousel-item */
+.carousel-item {
+    float: left;
+    width: $carouselItemWidth;
+    height: 100px;
+    position: relative;
+    margin: $carouselItemMargin;}
+.carousel-item--landscape {width: 600px;}
+.carousel-item__inner {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;}
+.carousel-item__img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    margin: auto;}
+.carousel-item__img--selected {position: static;}
+.carousel-item__h2 {
+    font-size: .8rem;
+    display: none;
+    color: $textColor;
+}
+.carousel-item__h2--selected {
+    display: block;
+}
+@media (min-width: $mobileWidth) {
+    .carousel-item {
+        display: block;
+        margin-top: 5vh;
+        margin-bottom: 5vw;
+    }
+    .carousel-item--selected {
+        max-width: 70vw;
+        height: 90vh;
+        display: block;
+        position: static;
+        width: auto;
+    }
+
+    .carousel-item__link {padding: 0; margin: 0;}
+    .carousel-item__h2--selected {
+        position: absolute;
+        left: 70vw;
+        width: 20vw;
+        bottom: 10vh;
+        text-align: left;
+        display: block;
+        background-color: rgba(255, 255, 255, .6);
+        padding: .8rem;
+    }
+}
+@media (max-width: $mobileWidth) {
+    .carousel-item {
+        display: none;
+    }
+    .carousel-item--selected {
+        max-width: 80vw;
+        height: 83vh;
+        margin: 5vh 10vw 12vh 10vw;
+        display: block;
+        float: none;
+        position: static;
+        width: auto;
+    }
+    .carousel-item__inner--selected {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* btn */
+.btn {border: 0;}
+.btn:hover {cursor: pointer;}
+.btn--load {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50px;
+    margin-left: -25px;
+    padding: 10px 15px;
+    background-color: white;}
+.btn--nav {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    line-height: 100vh;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;}
+.btn--nav::before {
+    text-align: center;
+    position: relative;
+    top: 3pt;
+    content: "";
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-right: 0.3rem solid $arrowColor;
+    border-top: 0.3rem solid $arrowColor}
+.btn--prev {left: 0;padding-left:.4rem;}
+.btn--prev::before{transform: rotate(225deg);}
+.btn--next {right: 0;padding-right:.4rem;}
+.btn--next::before{transform: rotate(45deg);}
+@media (min-width: $mobileWidth) {
+    .btn--nav {width: 40px;}
+}
+@media (max-width: $mobileWidth) {
+    .btn--nav {width: 5vw;}
+}
+
+/* spinner */
+.spinner:before,
+.spinner:after,
+.spinner {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: load7 1.8s infinite ease-in-out;
+    animation: load7 1.8s infinite ease-in-out;
+}
+.spinner {
+    color: #ffffff;
+    font-size: 10px;
+    margin: 80px auto;
+    position: relative;
+    text-indent: -9999em;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+.spinner:before {
+    left: -3.5em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+.spinner:after {
+    left: 3.5em;
+}
+.spinner:before,
+.spinner:after {
+    content: '';
+    position: absolute;
+    top: 0;
+}
+@-webkit-keyframes load7 {
+    0%,
+    80%,
+    100% {box-shadow: 0 2.5em 0 -1.3em;}
+    40% {box-shadow: 0 2.5em 0 0;}
+}
+@keyframes load7 {
+    0%,
+    80%,
+    100% {box-shadow: 0 2.5em 0 -1.3em;}
+    40% {box-shadow: 0 2.5em 0 0;}
+}
+.spinner {
+    position:absolute;
+    left: 50%;
+    top: 100px;
+    margin-left: -1.25em}
+.spinner--show {display: block;}
+.spinner--hide {display: none;}
+

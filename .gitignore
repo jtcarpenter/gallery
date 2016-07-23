@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+coverage
+.vscode
+public/bundle.js
+public/*.jpg
+dist

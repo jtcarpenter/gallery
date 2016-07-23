@@ -1,0 +1,324 @@
+[
+  {
+    "id": 6,
+    "title": "Untitled",
+    "media": "Acrylic on Canvas",
+    "year": 1997,
+    "size": "",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/untitled-baby-face.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/untitled-baby-face.thumb.jpg"
+    }
+  },
+  {
+    "id": 15,
+    "title": "Untitled",
+    "media": "Acrylic and enamel on MDF",
+    "year": 1999,
+    "size": "90x60cm",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/untitled-married.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/untitled-married.thumb.jpg"
+    }
+  },
+  {
+    "id": 16,
+    "title": "Untitled",
+    "media": "Acrylic and enamel on MDF",
+    "year": 1999,
+    "size": "90x60cm",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/untitled-ballerina-1.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/untitled-ballerina-1.thumb.jpg"
+    }
+  },
+  {
+    "id": 17,
+    "title": "Untitled",
+    "media": "Acrylic and enamel on MDF",
+    "year": 1999,
+    "size": "90x60cm",
+    "orientation": "",
+    "large": {
+      "src": "/paintings/untitled-makeup-doll.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/untitled-makeup-doll.thumb.jpg"
+    }
+  },
+  {
+    "id": 23,
+    "title": "Untitled",
+    "media": "Acrylic on canvas",
+    "year": 1999,
+    "size": "141x94cm",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/untitled-bw-footballer-back.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/untitled-bw-footballer-back.thumb.jpg"
+    }
+  },
+  {
+    "id": 25,
+    "title": "The Misunderstood",
+    "media": "Acrylic on canvas",
+    "year": 2000,
+    "size": "(112x150cm)x2",
+    "orientation": "landscape",
+    "large": {
+      "src": "/paintings/the-misunderstood.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/the-misunderstood.thumb.jpg"
+    }
+  },
+  {
+    "id": 26,
+    "title": "Untitled",
+    "media": "Acrylic on canvas",
+    "year": 2000,
+    "size": "160x106cm",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/untitled-big-colour-manga.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/untitled-big-colour-manga.thumb.jpg"
+    }
+  },
+  {
+    "id": 27,
+    "title": "The Spirit of Gravity",
+    "media": "Acrylic on canvas",
+    "year": 2000,
+    "size": "160x106cm",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/spirit-of-gravity-1.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/spirit-of-gravity-1.thumb.jpg"
+    }
+  },
+  {
+    "id": 28,
+    "title": "The Spirit of Gravity Copy",
+    "media": "Acrylic on canvas",
+    "year": 2000,
+    "size": "160x106cm",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/spirit-of-gravity-2.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/spirit-of-gravity-2.thumb.jpg"
+    }
+  },
+  {
+    "id": 30,
+    "title": "Untitled",
+    "media": "Acrylic on canvas",
+    "year": 2002,
+    "size": "100x39cm",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/untitled-bw-manga-back.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/untitled-bw-manga-back.thumb.jpg"
+    }
+  },
+  {
+    "id": 36,
+    "title": "Untitled",
+    "media": "Acrylic on canvas",
+    "year": 2002,
+    "size": "46x50cm",
+    "orientation": "landscape",
+    "large": {
+      "src": "/paintings/untitled-ballerina-face.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/untitled-ballerina-face.thumb.jpg"
+    }
+  },
+  {
+    "id": 37,
+    "title": "Untitled",
+    "media": "Acrylic on canvas",
+    "year": 2002,
+    "size": "76x61cm",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/untitled-pilot.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/untitled-pilot.thumb.jpg"
+    }
+  },
+  {
+    "id": 38,
+    "title": "Untitled",
+    "media": "Acrylic on canvas",
+    "year": 2002,
+    "size": "90x52cm",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/untitled-children.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/untitled-children.thumb.jpg"
+    }
+  },
+  {
+    "id": 43,
+    "title": "Champion",
+    "media": "Acrylic on board",
+    "year": 2003,
+    "size": "150x100cm",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/champion.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/champion.thumb.jpg"
+    }
+  },
+  {
+    "id": 44,
+    "title": "Hero",
+    "media": "Acrylic on canvas",
+    "year": 2003,
+    "size": "160 X 100cm",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/hero.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/hero.thumb.jpg"
+    }
+  },
+  {
+    "id": 45,
+    "title": "Prima Dona",
+    "media": "Oil on Canvas",
+    "year": 2003,
+    "size": "90x80cm",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/prima-donna.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/prima-donna.thumb.jpg"
+    }
+  },
+  {
+    "id": 46,
+    "title": "Model",
+    "media": "Acrylic on Canvas",
+    "year": 2003,
+    "size": "160x100cm",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/model.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/model.thumb.jpg"
+    }
+  },
+  {
+    "id": 50,
+    "title": "Untitled",
+    "media": "Acrylic on canvas",
+    "year": 2003,
+    "size": "90x80cm",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/untitled-posterised-pilot.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/untitled-posterised-pilot.thumb.jpg"
+    }
+  },
+  {
+    "id": 51,
+    "title": "Untitled",
+    "media": "Acrylic on canvas",
+    "year": 2003,
+    "size": "129x75cm",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/untitled-posterised-colour-manga.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/untitled-posterised-colour-manga.thumb.jpg"
+    }
+  },
+  {
+    "id": 54,
+    "title": "Millenium",
+    "media": "Acrylic on gesso board",
+    "year": 2004,
+    "size": "79x110cm",
+    "orientation": "landscape",
+    "large": {
+      "src": "/paintings/millenium.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/millenium.thumb.jpg"
+    }
+  },
+  {
+    "id": 55,
+    "title": "New World",
+    "media": "Acrylic on gesso board",
+    "year": 2004,
+    "size": "102x90cm",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/new-world.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/new-world.thumb.jpg"
+    }
+  },
+  {
+    "id": 56,
+    "title": "Untitled",
+    "media": "Acrylic on gesso board",
+    "year": 2004,
+    "size": "",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/untitled-lips.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/untitled-lips.thumb.jpg"
+    }
+  },
+  {
+    "id": 59,
+    "title": "Untitled",
+    "media": "Acrylic on canvas",
+    "year": 2004,
+    "size": "100x60cm",
+    "orientation": "portrait",
+    "large": {
+      "src": "/paintings/untitled-colour-frontal-manga-2.large.jpg"
+    },
+    "thumb": {
+      "src": "/paintings/untitled-colour-frontal-manga-2.thumb.jpg"
+    }
+  }
+]
