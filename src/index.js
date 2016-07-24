@@ -9,7 +9,7 @@ import appCss from './app.scss';
 
 ReactDOM.render(
     <Provider store={appStore}>
-        <Router history={hashHistory}>
+        <Router history={browserHistory}>
             <Route path="/(:id)" component={CarouselCtnr}></Route>
         </Router>
     </Provider>,

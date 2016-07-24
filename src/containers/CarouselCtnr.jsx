@@ -17,7 +17,7 @@ export class CarouselCtnr extends React.Component {
         this.props = props;
         this.load();
 
-        hashHistory.listen(location =>
+        browserHistory.listen(location =>
             props.dispatch(select(location.pathname.replace('/', ''))));
     }
 
@@ -48,11 +48,11 @@ export class CarouselCtnr extends React.Component {
     }
 
     handlePrev() {
-        hashHistory.push('/' + this.props.carousel.prev);
+        browserHistory.push('/' + this.props.carousel.prev);
     }
 
     handleNext() {
-        hashHistory.push('/' + this.props.carousel.next);
+        browserHistory.push('/' + this.props.carousel.next);
     }
 }
 
