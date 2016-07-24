@@ -258,3 +258,11 @@ body::before {
 .spinner--show {display: block;}
 .spinner--hide {display: none;}
 
+/* error-msg */
+.error-msg {
+    display: none;
+    color: white;
+    background: #d55;
+}
+.error-msg--show {display: block;}
+

@@ -6,6 +6,7 @@ import Spinner from '../components/Spinner.jsx';
 import {init, select} from '../actions/carouselActions';
 import {fetchData} from '../actions/paintingsActions';
 import Swipeable from '../components/Swipeable.jsx';
+import ErrorMsg from '../components/ErrorMsg.jsx';
 
 export class CarouselCtnr extends React.Component {
     constructor(props) {
@@ -23,6 +24,7 @@ export class CarouselCtnr extends React.Component {
     render() {
         const {carousel, paintings} = this.props;
         return <div className="carousel-ctnr" onTouchMove={this.touchMove}>
+            <ErrorMsg error={paintings.error}></ErrorMsg>
             <Carousel
                 carousel={carousel}
                 onPrev={this.handlePrev}
@@ -40,6 +42,8 @@ export class CarouselCtnr extends React.Component {
         const id = this.props.params.id;
         this.props.dispatch(fetchData()).then((res) => {
             this.props.dispatch(init(res.data, id));
+        }).catch(err => {
+           console.error(err);
         });
     }
 

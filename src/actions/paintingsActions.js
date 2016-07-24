@@ -16,11 +16,23 @@ export function response(json, carouselLength) {
     }
 }
 
+export function fail(err) {
+    return {
+        type: actionTypes.FETCH_FAIL,
+        error: err
+    }
+}
+
 export function fetchData(maxLength) {
     return dispatch => {
         dispatch(request(maxLength));
         return fetch(paintingConfig.URI)
             .then(response => response.json())
             .then(json => dispatch(response(json)))
+            .catch((err) => {
+                console.error(err);
+                dispatch(fail(err))
+            })
+
     }
 }

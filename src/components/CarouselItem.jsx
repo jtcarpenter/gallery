@@ -1,5 +1,4 @@
 import React from 'react';
-import {Provider, connect} from 'react-redux';
 import {select} from '../actions/carouselActions';
 import {Link} from 'react-router';
 

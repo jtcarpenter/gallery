@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import CarouselItem from '../components/CarouselItem.jsx';
 import * as keyCodes from '../constants/keyCodes';
-import {Provider, connect} from 'react-redux';
 import {prev, next} from '../actions/carouselActions';
 import {Link} from 'react-router';
 import Swipeable from '../components/Swipeable.jsx';

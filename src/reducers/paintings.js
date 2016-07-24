@@ -1,4 +1,5 @@
 import * as actionTypes from '../constants/actionTypes';
+import * as paintingConfig from '../constants/paintingConfig';
 
 const initialState = {
     loading: false,
@@ -20,7 +21,7 @@ export default function PaintingsReducer(state = initialState, action) {
         case actionTypes.FETCH_FAIL:
             return Object.assign({}, state, {
                 loading: false,
-                data: action.items
+                error: paintingConfig.FETCH_ERROR
             });
         default:
             return state;
